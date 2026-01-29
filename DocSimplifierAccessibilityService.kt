@@ -31,8 +31,13 @@ class DocumentSimplifierAccessibilityService : AccessibilityService() {
         if (n.text != null) {
        sb.append(n.text).append("")
         }
-         
-      
+        for (i in 0 until n.childcount) {
+          recurse(n.getChild(i))
+        }
+    }
+    recurse(node)
+    return sb.toString()
+}
       
       
       
@@ -41,7 +46,7 @@ class DocumentSimplifierAccessibilityService : AccessibilityService() {
   
   
     return text
-  }
+  
     
     private fun showSimplifiedText(text: String) {
 
