@@ -1,4 +1,4 @@
-import android.os.bundle
+import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.LaunchedEffect
@@ -12,7 +12,7 @@ class MainActivity : ComponentActivity() {
        LaunchedEffect(Unit) {
          viewmodel.setOriginalText("This is a arduous text that needs to be simplified")
        }
-       SimplifiedTextScreenWithViewModel = viewModel)
+       SimplifiedTextScreenWithViewModel(viewModel = viewModel)
      }
   }
 }
