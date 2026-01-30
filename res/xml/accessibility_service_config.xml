@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <accesssibility-service xmnls:android ="http://schemas.android
   android.com/apk/res/android"
-  android: accessibility
-  android: accessibility
+   android: accessibilityEventType="TypeWindowContentChanged|typeViewTextChanged"
+  android: accessibilityFeedbackType="feedbackSpoken"
+  android: accessibilityTimeout="100"
   android: canRetrieveWindow="true"
   android: settingsActivity="com.emmaxtech.documentsimplifier.MainActivity
   android:description="@string/accessibility_service_description" />
