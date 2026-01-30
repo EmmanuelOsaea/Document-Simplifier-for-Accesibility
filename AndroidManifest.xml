@@ -1,0 +1,14 @@
+<manifest xmlns: android 
+  package=com.emmaxtech.documentsimplifier">
+ 
+  <uses permission android name = "android.permission.BIND_ACCESSIBILITY_SERVICE" />
+  <uses permission android name = "android.permission.SYSTEM_ALERT_WINDOW" />
+
+  <application
+  android:allowBackup = true
+   android: label = "Document Simplifier"
+   android: theme = "@style/Theme.DocumentSimplifier">
+
+    activity
+    
+    
