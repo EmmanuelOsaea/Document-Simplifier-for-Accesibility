@@ -21,4 +21,13 @@ class SimplifiedTextViewModel {
   }
 
     fun simplify() {
-      viewModelScope
+      viewModelScope.launch {
+       val simplified = repository.simplifyText(originalText)
+       _simplifiedText.value = simplified
+      }
+    }
+    //refreshes the simplified text
+      fun refresh() {
+      simplify()
+      }
+  }
