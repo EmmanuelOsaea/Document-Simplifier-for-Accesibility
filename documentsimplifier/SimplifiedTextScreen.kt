@@ -44,7 +44,14 @@ fun SimplifiedTextScreen(
             text = simplifiedText,
             style = MaterialTheme.typography.body1
             )
-        }
-      }
+        } else
+        Text(
+          text = simplifiedText
+          style = MaterialTheme.typography.body1
+         )
     }
     }
+    }
+    }
+
+    
